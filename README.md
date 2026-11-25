@@ -59,3 +59,5 @@ The executable writes:
 - `lights/` : point-light implementation
 - `ObjLoader.h` : TinyObjLoader-based OBJ support
 - `Renderer.h` : image and render-stat output
+- `Scene.h`: class, whose instances hold all the objects and light informatons
+- `Hittable.h`: Abstract interface for objcts that can detect ray intersections
