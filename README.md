@@ -68,7 +68,7 @@ shadowsEnabled : true
 ```json
 // render stats
 {
-  "total_rendering_time_seconds": 31.6964935,
+  "total_rendering_time_seconds": 472.366418,
   "object_count": 928,
   "triangle_count": 927
 }
