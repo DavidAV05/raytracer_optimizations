@@ -49,6 +49,31 @@ The executable writes:
 - `render.ppm` : the rendered image in PPM format
 - `render_stats.json` : render time, object count, and triangle count
 
+
+### Example
+Example rendering a blue glass sphere, and the monkey.obj as a triangle-mesh on a reflective floor with checker pattern:
+
+![Rendered example](render_example.png)
+
+```yaml
+aspectRatio: 16/9
+imageWidth: 800px
+verticalFov: 40.0
+samplesPerPixel: 10;
+depth: 4
+shadowsEnabled : true
+```
+
+
+```json
+// render stats
+{
+  "total_rendering_time_seconds": 31.6964935,
+  "object_count": 928,
+  "triangle_count": 927
+}
+```
+
 ## Project layout
 
 - `main.cpp` : example scene and renderer configuration
