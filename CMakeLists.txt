@@ -32,7 +32,14 @@ add_executable(simple_renderer src/main.cpp
         Materials/DialecticMaterial.h
         src/Intersections/RayTracer.h
         src/Rendering/RenderStats.h
-        src/Rendering/Renderer.h)
+        src/Rendering/Renderer.h
+        src/BVH-Emre/BVH.h
+        src/BVH-Emre/BVHValidation.h
+        src/BVH-Emre/BVHValidationMain.cpp
+        src/BVH-Emre/BVHValidationMain.h
+        src/BVH-Emre/TraversalStats.h
+        src/BVH-Emre/BVHMeshBenchmark.h
+        src/BVH-Emre/BVHCameraBenchmark.h)
 
 set_property(TARGET simple_renderer PROPERTY
         VS_DEBUGGER_WORKING_DIRECTORY ".")

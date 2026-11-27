@@ -40,6 +40,10 @@ public:
         return hitAnything;
     }
 
+    [[nodiscard]] const std::vector<std::shared_ptr<Hittable>>& objects() const noexcept {
+        return objects_;
+    }
+
 private:
     std::vector<std::shared_ptr<Hittable>> objects_;
 };
