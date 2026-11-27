@@ -1,9 +1,11 @@
+### This project is based off [a Simple Raytracer template](https://github.com/jochempunt/Simple_Raytracer.git) by [jochempunt](https://github.com/jochempunt)
+
 # Simple Renderer
 
 a small witted style C++20 ray tracer i made, based on the concepts in
 [Ray Tracing in One Weekend](https://raytracing.github.io/).
 
-*Sidenote: This implementation differs from the book in a few  areas and does not use path tracing.*
+*Sidenote: This implementation differs from the book in a few areas and does not use path tracing.*
 
 ## Features
 
@@ -18,7 +20,7 @@ a small witted style C++20 ray tracer i made, based on the concepts in
 ## Requirements
 
 - C++20 compiler
-- CMake >=3.20 
+- CMake >=3.20
 
 [TinyObjLoader](https://github.com/tinyobjloader/tinyobjloader) is included in
 `../third_party/tinyobjloader`
@@ -28,7 +30,7 @@ a small witted style C++20 ray tracer i made, based on the concepts in
 You can open the project root in CLion (or Visual Studio) and build the
 `simple_renderer` target from the CMake proj file.
 
-OR 
+OR
 manually from the project root:
 
 ```bash
@@ -40,8 +42,6 @@ executable is placed at `build/simple_renderer` on Linux or
 `build/Release/simple_renderer.exe` on a single-config Visual Studio
 setup.
 
-
-
 ## Outputs
 
 The executable writes:
@@ -49,8 +49,8 @@ The executable writes:
 - `render.ppm` : the rendered image in PPM format
 - `render_stats.json` : render time, object count, and triangle count
 
-
 ### Example
+
 Example rendering a blue glass sphere, and the monkey.obj as a triangle-mesh on a reflective floor with checker pattern:
 
 ![Rendered example](../render_example.png)
@@ -61,9 +61,8 @@ imageWidth: 800px
 verticalFov: 40.0
 samplesPerPixel: 10;
 depth: 4
-shadowsEnabled : true
+shadowsEnabled: true
 ```
-
 
 ```json
 // render stats

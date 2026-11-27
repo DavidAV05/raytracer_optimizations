@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -23,13 +22,17 @@ public:
         objects_.push_back(std::move(object));
     }
 
-    [[nodiscard]] bool hit(const Ray& ray, const Interval interval, HitRecord& record) const override {
+    [[nodiscard]] std::vector<std::shared_ptr<Hittable> > getObjects() const noexcept {
+        return objects_;
+    }
+
+    [[nodiscard]] bool hit(const Ray &ray, const Interval interval, HitRecord &record) const override {
         HitRecord tempRecord;
         bool hitAnything = false;
         double closestSoFar = interval.max();
 
-        for (const auto& object : objects_) {
-            const Interval searchInterval{interval.min(),closestSoFar};
+        for (const auto &object: objects_) {
+            const Interval searchInterval{interval.min(), closestSoFar};
             if (object->hit(ray, searchInterval, tempRecord)) {
                 hitAnything = true;
                 closestSoFar = tempRecord.t;
@@ -41,5 +44,5 @@ public:
     }
 
 private:
-    std::vector<std::shared_ptr<Hittable>> objects_;
+    std::vector<std::shared_ptr<Hittable> > objects_;
 };

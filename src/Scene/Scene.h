@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <cstddef>
@@ -32,27 +31,31 @@ public:
         return triangleCount_;
     }
 
-    void addLight(const PointLight& light) {
+    void addLight(const PointLight &light) {
         lights_.push_back(light);
     }
 
-    [[nodiscard]] bool hit(
-        const Ray& ray,
-        Interval rayInterval,
-        HitRecord& record
-    ) const {
-        return objects_.hit(ray, rayInterval, record);
+    [[nodiscard]] const HittableList &hittableList() const noexcept {
+        return objects_;
     }
 
-    [[nodiscard]] const std::vector<PointLight>& lights() const noexcept {
+    // [[nodiscard]] bool hit(
+    //     const Ray& ray,
+    //     Interval rayInterval,
+    //     HitRecord& record
+    // ) const {
+    //     return objects_.hit(ray, rayInterval, record);
+    // }
+
+    [[nodiscard]] const std::vector<PointLight> &lights() const noexcept {
         return lights_;
     }
 
-    [[nodiscard]] const Color& ambientLight() const noexcept {
+    [[nodiscard]] const Color &ambientLight() const noexcept {
         return ambientLight_;
     }
 
-    void setAmbientLight(const Color& color) noexcept {
+    void setAmbientLight(const Color &color) noexcept {
         ambientLight_ = color;
     }
 
