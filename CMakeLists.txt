@@ -32,7 +32,8 @@ add_executable(simple_renderer src/main.cpp
         Materials/DialecticMaterial.h
         src/Intersections/RayTracer.h
         src/Rendering/RenderStats.h
-        src/Rendering/Renderer.h)
+        src/Rendering/Renderer.h
+        src/Intersections/BVH_david.h)
 
 set_property(TARGET simple_renderer PROPERTY
         VS_DEBUGGER_WORKING_DIRECTORY ".")
