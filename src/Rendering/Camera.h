@@ -9,12 +9,12 @@
 #include <numbers>
 #include <stdexcept>
 
-#include "Color.h"
-#include "Ray.h"
+#include "../Color.h"
+#include "../Intersections/Ray.h"
 #include "RayTracer.h"
-#include "Scene.h"
-#include "SimpleRT.h"
-#include "Vec3.h"
+#include "../Scene.h"
+#include "../SimpleRT.h"
+#include "../Vec3.h"
 
 class Camera final
 {

@@ -21,7 +21,7 @@ a small witted style C++20 ray tracer i made, based on the concepts in
 - CMake >=3.20 
 
 [TinyObjLoader](https://github.com/tinyobjloader/tinyobjloader) is included in
-`third_party/tinyobjloader`
+`../third_party/tinyobjloader`
 
 ## Building
 
@@ -53,7 +53,7 @@ The executable writes:
 ### Example
 Example rendering a blue glass sphere, and the monkey.obj as a triangle-mesh on a reflective floor with checker pattern:
 
-![Rendered example](render_example.png)
+![Rendered example](../render_example.png)
 
 ```yaml
 aspectRatio: 16/9
@@ -78,10 +78,10 @@ shadowsEnabled : true
 
 - `main.cpp` : example scene and renderer configuration
 - `Camera.h`, `Ray.h`, `RayTracer.h` : camera and ray tracing
-- `Shapes/` : sphere, plane, and triangle primitives
-- `Materials/` : diffuse, reflective, and dielectric materials
-- `Textures/` : material textures
-- `lights/` : point-light implementation
+- `../Shapes` : sphere, plane, and triangle primitives
+- `../Materials` : diffuse, reflective, and dielectric materials
+- `../Textures` : material textures
+- `../lights` : point-light implementation
 - `ObjLoader.h` : TinyObjLoader-based OBJ support
 - `Renderer.h` : image and render-stat output
 - `Scene.h`: class, whose instances hold all the objects and light informatons

@@ -8,9 +8,9 @@
 
 
 #include "Camera.h"
-#include "RayTracer.h"
-#include "RenderStats.h"
-#include "Scene.h"
+#include "../Intersections/RayTracer.h"
+#include "../RenderStats.h"
+#include "../Scene.h"
 
 class Renderer final
 {

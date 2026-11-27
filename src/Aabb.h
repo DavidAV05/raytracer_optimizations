@@ -4,7 +4,7 @@
 #include <limits>
 
 #include "Interval.h"
-#include "Ray.h"
+#include "Intersections/Ray.h"
 
 class Aabb final {
 public:

@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Ray.h"
-#include "Interval.h"
-#include "Aabb.h"
-#include "Materials/Material.h"
+#include "../Interval.h"
+#include "../Aabb.h"
+#include "../../Materials/Material.h"
 
 struct HitRecord {
     Point3 intersectionPoint;

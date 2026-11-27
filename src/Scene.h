@@ -7,12 +7,12 @@
 #include <vector>
 
 #include "Color.h"
-#include "Hittable.h"
-#include "HittableList.h"
+#include "Intersections/Hittable.h"
+#include "Intersections/HittableList.h"
 #include "Interval.h"
-#include "lights/Pointlight.h"
+#include "../lights/Pointlight.h"
 #include "Ray.h"
-#include "Shapes/Triangle.h"
+#include "../Shapes/Triangle.h"
 
 class Scene final {
 public:

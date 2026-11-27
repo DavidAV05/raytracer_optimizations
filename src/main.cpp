@@ -2,16 +2,16 @@
 #include <iostream>
 #include <string>
 
-#include "Camera.h"
+#include "Rendering/Camera.h"
 #include "ObjLoader.h"
-#include "Renderer.h"
-#include "Materials/PhongMaterial.h"
+#include "Rendering/Renderer.h"
+#include "../Materials/PhongMaterial.h"
 #include "Scene.h"
-#include "Materials/DialecticMaterial.h"
-#include "Shapes/Plane.h"
-#include "Shapes/Triangle.h"
-#include "Textures/CheckerBoardTexture.h"
-#include "Textures/SolidColor.h"
+#include "../Materials/DialecticMaterial.h"
+#include "../Shapes/Plane.h"
+#include "../Shapes/Triangle.h"
+#include "../Textures/CheckerBoardTexture.h"
+#include "../Textures/SolidColor.h"
 
 int main(const int argc, char* argv[])
 {

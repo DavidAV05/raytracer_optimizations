@@ -1,11 +1,11 @@
 #pragma once
-#include "Color.h"
+#include "../Color.h"
 #include "Hittable.h"
-#include "Interval.h"
+#include "../Interval.h"
 #include "Ray.h"
-#include "Scene.h"
-#include "SimpleRT.h"
-#include "lights/Pointlight.h"
+#include "../Scene.h"
+#include "../SimpleRT.h"
+#include "../../lights/Pointlight.h"
 
 class RayTracer final
 {
