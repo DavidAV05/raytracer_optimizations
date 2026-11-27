@@ -3,8 +3,8 @@
 #include <algorithm>
 #include <limits>
 
-#include "Interval.h"
-#include "Intersections/Ray.h"
+#include "../Types/Interval.h"
+#include "Ray.h"
 
 class Aabb final {
 public:

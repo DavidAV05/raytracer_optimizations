@@ -9,10 +9,10 @@
 #include <string>
 #include <vector>
 
-#include "../Materials/Material.h"
+#include "../../Materials/Material.h"
 #include "Scene.h"
-#include "../Shapes/Triangle.h"
-#include "../third_party/tinyobjloader/tiny_obj_loader.h"
+#include "../../Shapes/Triangle.h"
+#include "../../third_party/tinyobjloader/tiny_obj_loader.h"
 
 [[nodiscard]] inline std::vector<Triangle> loadWavefrontObj(
     const std::string& path,

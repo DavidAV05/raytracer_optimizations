@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Ray.h"
-#include "../Interval.h"
-#include "../Aabb.h"
+#include "../Types/Interval.h"
+#include "Aabb.h"
 #include "../../Materials/Material.h"
 
 struct HitRecord {

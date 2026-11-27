@@ -6,13 +6,13 @@
 #include <utility>
 #include <vector>
 
-#include "Color.h"
-#include "Intersections/Hittable.h"
-#include "Intersections/HittableList.h"
-#include "Interval.h"
-#include "../lights/Pointlight.h"
-#include "Ray.h"
-#include "../Shapes/Triangle.h"
+#include "../Types/Color.h"
+#include "../Intersections/Hittable.h"
+#include "../Intersections/HittableList.h"
+#include "../Types/Interval.h"
+#include "../../lights/Pointlight.h"
+#include "../Intersections/Ray.h"
+#include "../../Shapes/Triangle.h"
 
 class Scene final {
 public:

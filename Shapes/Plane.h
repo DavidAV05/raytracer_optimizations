@@ -5,11 +5,11 @@
 #include <memory>
 #include <utility>
 
-#include "../Hittable.h"
-#include "../Interval.h"
+#include "../src/Intersections/Hittable.h"
+#include "../src/Types/Interval.h"
 #include "../Materials/Material.h"
-#include "../Ray.h"
-#include "../Vec3.h"
+#include "../src/Intersections/Ray.h"
+#include "../src/Types/Vec3.h"
 
 
 class Plane final : public Hittable {

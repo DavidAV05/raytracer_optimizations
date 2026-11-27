@@ -6,7 +6,7 @@
 #include <stdexcept>
 #include <utility>
 
-#include "../Hittable.h"
+#include "../src/Intersections/Hittable.h"
 #include "../Materials/Material.h"
 
 class Triangle final : public Hittable {

@@ -3,10 +3,10 @@
 #include <string>
 
 #include "Rendering/Camera.h"
-#include "ObjLoader.h"
+#include "Scene/ObjLoader.h"
 #include "Rendering/Renderer.h"
 #include "../Materials/PhongMaterial.h"
-#include "Scene.h"
+#include "Scene/Scene.h"
 #include "../Materials/DialecticMaterial.h"
 #include "../Shapes/Plane.h"
 #include "../Shapes/Triangle.h"
