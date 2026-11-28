@@ -1,0 +1,4 @@
+Camera,TotalRays,HitRays,MissRays,AvgTraversalSteps,MinTraversalSteps,MaxTraversalSteps,AvgBoundsTests,MinBoundsTests,MaxBoundsTests,AvgTriangleTests,MinTriangleTests,MaxTriangleTests
+Front,19200,2304,16896,13.507396,1,203,13.507396,1,203,3.109115,0,87
+Side,19200,1905,17295,12.986875,1,243,12.986875,1,243,2.785260,0,129
+Diagonal,19200,2803,16397,21.197708,1,281,21.197708,1,281,5.191042,0,127
